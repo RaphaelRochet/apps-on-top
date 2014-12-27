@@ -32,6 +32,7 @@ function init(metadata) {
         case"8": break
         case"10": break
         case"12": break
+	case"14": break
         default: throw new Error("Strange version number (extension.js:32).")
     }
 }
