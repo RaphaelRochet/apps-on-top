@@ -19,30 +19,21 @@
 const Config = imports.misc.config
 const Main   = imports.ui.main
 
-function init(metadata) {
-    let current_version = Config.PACKAGE_VERSION.split('.')
-    if (current_version.length != 3 || current_version[0] != 3)
-        throw new Error("Strange version number (extension.js:24).")
-    
-    switch (current_version[1]) {
-        case"5": global.log("Warning of extension [" + metadata.uuid + "]:\n" +
-                            "              Development release detected (" +
-                            Config.PACKAGE_VERSION +
-                            "). Loading as a 3.6 release.\n") //eak
-        case"6": break
-        case"8": break
-        case"10": break
-        case"12": break
-	case"14": break
-        default: throw new Error("Strange version number (extension.js:32).")
-    }
+function init() {
 }
 
-function toggle() {
-    let dash = Main.overview._dash.actor.get_children()[0]
-    let thingmoved = dash.get_children()[0]
-    dash.remove_actor(thingmoved)
-    dash.add_actor(thingmoved)
+function enable()  {
+	let dash = Main.overview.dash;
+	let container = dash._container;
+	let appsIcon = dash._showAppsIcon;
+	container.remove_child(appsIcon);
+	container.insert_child_at_index(appsIcon,0);
 }
-function enable()  { toggle() }
-function disable() { toggle() }
+
+function disable() {
+	let dash = Main.overview.dash;
+	let container = dash._container;
+	let appsIcon = dash._showAppsIcon;
+	container.remove_child(appsIcon);
+	container.add_child(appsIcon);
+}
