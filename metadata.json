@@ -1,10 +1,10 @@
 {
-  "description": "Move the Applications button at the top of the Dash.", 
-  "name": "Apps On Top", 
+  "description": "Move the Applications button at the top of the Dash.",
+  "name": "Apps On Top",
   "shell-version": [
     "3.36"
   ], 
-  "url": "https://github.com/RaphaelRochet/AppsOnTop", 
-  "uuid": "AppsOnTop@RaphaelRochet", 
+  "url": "https://github.com/RaphaelRochet/apps-on-top",
+  "uuid": "apps-on-top@RaphaelRochet",
   "version": 1
 }
