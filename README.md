@@ -12,9 +12,14 @@ You should have received a copy of the GNU General Public License along with
 this file. If not, see <http://www.gnu.org/licenses/>.
 
 ## One-click install
-If all goes well, it should be on https://extensions.gnome.org soon ;)
+It's on extensions.gnome.org :
+https://extensions.gnome.org/extension/3004/apps-on-top/
 
 ## Manual install
 To install, simply download as zip and unzip contents in ~/.local/share/gnome-shell/extensions/apps-on-top@RaphaelRochet
 
-
+## Credits
+I am not the original creator of this extension.
+I forked it from https://github.com/karlitos/AppsOnTop
+who forked from https://github.com/mrpdaemon/AppsOnTop
+who forked from (now unavailable)  https://github.com/obsidien/AppsOnTop
